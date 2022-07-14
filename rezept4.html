@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kochwelt</title>
+
+    <link rel="icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="rezept_style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="header_style.css">
+    <link rel="stylesheet" href="footer_styleNew.css">
+
+    <script src="script_calculation.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        let amouth = [125, 0.5, 0.75, 0.25, 0.25, 50, 50, 50, -1, -1];
+
+        let ingredient = ['g Penne', ' rote Paprika', ' EL Ajvar (Paprikapaste)', ' Zwiebel(n)',
+            ' Knoblauchzehe(n)', 'ml Sahne', 'ml Wasser',
+            'g Frischkäse', ' Salz und Paprikapulver Edelsüß',
+            ' Kräuter zum Garnieren'];
+    </script>
+</head>
+
+
+<body onload="calculation()">
+
+    <header id="headder" class="header">
+        <a href="index.html"><img class="header-logo" src="img/logo.png"></a>
+        <nav id="navbar" class="nav-bar">
+            <a href="index.html">Start</a>
+            <a href="rezept.html">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="imprint.html">Impressum</a>
+        </nav>
+    </header>
+
+    <img onclick="menuscrollingUp()" class="menubutton" id="scrollup" src="img/menuicon.png" alt="">
+    <img onclick="menuscrollingDown()" class="menubutton" id="scrolldown" src="img/menuicon.png" alt="">
+
+    <div id="menuHidden" class="menuhidden nav-bar">
+        <a href="index.html">Start</a>
+        <a href="rezept.html">Rezept des Tages</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="imprint.html">Impressum</a>
+    </div>
+
+    <div class="recipe-margin">
+        <div class="head">
+            <h1>Penne in cremiger Paprikasauce</h1>
+            <img src="img/penne.jpg">
+        </div>
+
+        <div class="icons flex-row">
+            <div class="bg-gray iconbox">
+                <img src="img/icons/clock-regular.svg">
+                30 Min.
+            </div>
+
+            <div class="bg-gray iconbox">
+                <img src="img/icons/brain-solid.svg">
+                simple
+            </div>
+
+            <div class="bg-gray iconbox">
+                <img src="img/icons/calendar-alt-regular.svg">
+                09.05.2022
+            </div>
+
+
+            <div class="bg-gray iconbox">
+                <a href="downloads/Penne.pdf" style=" text-decoration: none; color: black;" download><img
+                        src="img/download.png" style="width: 15px; height:15px;">Herunterladen</a>
+            </div>
+        </div>
+
+
+        <div class="calculation flex-row">
+            <p>Zutaten für</p>
+            <form>
+                <input type="number" id="input" class="quantity-number" value="4" min="1"
+                    oninput="validity.valid||(value='');" placeholder="Anzahl der Portionen">
+            </form>
+            <button onclick="calculation()" class="button">
+                Portionen
+            </button>
+        </div>
+
+
+        <table id="table"></table>
+
+
+        <div class="preparation">
+            <h2>Zubereitung</h2>
+            <div class="icons flex-row">
+                <div class="bg-gray iconbox">
+                    <img src="img/icons/clock-regular.svg">
+                    Zubereitung ca. 20 Minunten
+                </div>
+
+                <div class="bg-gray iconbox">
+                    <img src="img/icons/clock-regular.svg">
+                    Gesamtzeit ca. 30 Minunten
+                </div>
+            </div>
+
+            <p>Zuerst die Paprika in Stifte schneiden und die Zwiebeln klein würfeln. Danach die Zwiebeln
+                und den Knoblauch in Öl glasig dünsten. Die Paprikastreifen dazugeben und ein paar Minuten mit anbraten.
+                Dann mit Sahne und Wasser ablöschen, alles kurz aufkochen lassen und den Frischkäse und Ajvar einrühren.
+                Nun mit Salz und Paprikapulver würzen und 10 Minuten köcheln lassen. Parallel dazu die Nudeln kochen und
+                anschließend zur Soße geben. TIPP: Direkt eine große Pfanne nehmen, damit Soße und Nudeln später
+                zusammen
+                darin Platz haben.
+            </p>
+        </div>
+
+
+        <h3>Rezept erstellt von</h3>
+
+
+        <div class="profile flex-row">
+            <img src="img/imgFZ.jpeg">
+            <p>Fabienne Zell</p>
+        </div>
+    </div>
+</body>
+
+
+<footer class="footer">
+    <a href="index.html"> <img src="img/logo-white.png" id="logoFooter"></a>
+    <div class="footer-link">
+        <a class="footerLink" href="imprint.html" id="impressum">Impressum</a>
+        <a class="footerLink" href="data.html" id="privacy">Datenschutz</a>
+        <a class="footerLink" href="contact.html" id="contact">Kontakt</a>
+    </div>
+
+    <div class="footer-media">
+        <div class="h3-footer hide-mobile">
+            <h3>Follow us</h3>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.facebook.com"><img id="fbImg" src="img/facebook.png"></a>
+            <a href="https://www.instagram.com"><img id="instaImg" src="img/instagram.png"></a>
+            <a href="https://www.youtube.com"><img id="youTubeImg" src="img/youtube.png"></a>
+        </div>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,204 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+form {
+    margin: unset;
+}
+
+.recipe-margin {
+    margin: 50px 100px 0px 100px;
+}
+
+.bg-gray {
+    background-color: #EBEBEB;
+}
+
+.head {
+    margin-bottom: 32px;
+}
+
+.head img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    object-position: 100% 50%;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.iconbox {
+    padding: 8px 12px 8px 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 48px 18px 0px;
+}
+
+.icons img {
+    width: 20px;
+    height: 20px;
+    padding-right: 8px;
+    ;
+}
+
+.calculation {
+    padding: 8px 8px 8px 0px;
+    margin: 32px 32px 32px 0px;
+    border-top: 2px solid #EBEBEB;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 16px 32px 16px 32px;
+    border-radius: 10px;
+}
+
+tbody:nth-child(odd) {
+    background-color: #EBEBEB;
+    border-style: none;
+}
+
+.quantity-number {
+    width: 200px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    text-align: left;
+    border: 2px solid #EBEBEB;
+    border-radius: 2px 0px 0px 2px;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    width: 150px;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #066609
+}
+
+.preparation {
+    margin: 64px 0px 64px 0px;
+}
+
+.profile {
+    margin: 0px 0px 100px 0px;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.profile p {
+    padding: 0px 0px 0px 32px;
+}
+
+
+
+@media (max-width: 799px) {
+
+    body {
+        font-size: 1em;
+    }
+
+    .recipe-margin {
+        margin: 0px 50px 0px 50px;
+    }
+
+    .flex-row {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .head img {
+        height: 150px;
+        margin: unset;
+    }
+
+    .iconbox {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .icons {
+        font-size: 0.8em;
+    }
+
+    .icons img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .quantity-number {
+        width: 150px;
+        text-align: center;
+        margin: 0px 0px 10px 0px;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    table {
+        text-align: center;
+    }
+
+    th, td {
+        padding: 8px 16px 8px 16px;
+    }
+
+    .preparation {
+        text-align: center;
+        margin: 48px 0px 48px 0px;
+    }
+
+    .profile p {
+        padding: unset;
+    }
+}
+
+
+@media (min-width: 800px) and (max-width: 1000px){
+    .head img {
+        height: 200px;
+        margin: unset;
+    }
+
+    .recipe-margin{
+        margin: 50px 50px 0px 50px
+    }
+}

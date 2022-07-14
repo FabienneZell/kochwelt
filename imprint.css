@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.page-layout{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.impressum {
+    background-color: rgb(235, 235, 235);
+    margin: 40px 100px 40px 100px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    font-size: 16px;
+}
+
+
+
+
+@media (max-width: 414px){
+
+    .page-layout h1{
+        font-size: 1em;
+    }
+
+    .page-layout h2{
+        font-size: 0.8em;
+    }
+
+    p{
+        font-size: 0.75em;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .telephone {                 
+        font-size: 0.75em;
+    }
+    .mail {
+        font-size: 0.75em;
+    }
+
+    .impressum{
+        align-items: center;
+        padding: 32px;
+        margin: 40px 50px 40px 50px;
+    }
+
+}
+
+
+@media (min-width: 415px) and (max-width: 549px){
+
+    .page-layout h2 {
+        font-size: 1em;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .impressum a {
+        font-size: 0.8em;
+    }
+
+    .impressum{
+        align-items: center;
+        margin: 40px 60px 40px 60px;
+    }
+}

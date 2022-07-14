@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="wok_style.css">
+    <link rel="stylesheet" href="header_style.css">
+    <link rel="stylesheet" href="scrollmenu.css">
+    <link rel="stylesheet" href="footer_styleNew.css">
+
+    <link rel="stylesheet" href="fonts.css">
+
+    <script src="script.js"></script>
+
+    <title>Kochwelt</title>
+</head>
+
+
+
+<body onload="changeContainer1()">
+
+    <header id="headder" class="header">
+        <a href="index.html"><img class="header-logo" src="img/logo.png"></a>
+        <nav id="navbar" class="nav-bar">
+            <a href="index.html">Start</a>
+            <a href="rezept.html">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="imprint.html">Impressum</a>
+        </nav>
+    </header>
+
+    <img onclick="menuscrollingUp()" class="menubutton" id="scrollup"src="img/menuicon.png" alt="">
+    <img onclick="menuscrollingDown()" class="menubutton" id="scrolldown"src="img/menuicon.png" alt="">
+
+    <div id="menuHidden" class="menuhidden nav-bar">
+        <a href="index.html">Start</a>
+        <a href="rezept.html">Rezept des Tages</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="imprint.html">Impressum</a>
+    </div>
+
+    <div id="slide-show" class="recipe-big">
+        <img class="img-recipe" src="./img/pancakes.jpg">
+        <div class="explain-recipe">
+            <h2>American Pancakes</h2>
+            <p class="recipe-text">Alle Pancakes schmecken gleich?
+                Probieren Sie diese American Pancakes und sie werden Ihre Meinung ändern!
+                Ein süßer Genuss, der sie auf einer Wolke dahin schweben lässt.</p>
+            <div class="btn">
+                <a href="#"><button>Rezept öffnen</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rezeptwahl">
+        <h1>Lust auf was Neues?</h1>
+        <div class="slideset">
+            <div class="rezeptwahl-slide">
+                <div class="rezeptImgDiv"><a href="rezept.html"><img class="rezeptwahl-img" src="img/quiche.jpg" style=  "margin-left: 0px"!important alt=""></a>
+                    <p style="margin-right: 80px;">Quiche</p>
+                </div>
+                <div class="rezeptImgDiv"><a href="rezept2.html"><img class="rezeptwahl-img" src="img/pancakes.jpg" alt=""></a>
+                    <p>Pancakes</p>
+                </div>
+                <div class="rezeptImgDiv"><a href="rezeptgulasch.html"><img class="rezeptwahl-img" src="img/goulash.jpg" alt=""></a>
+                    <p>Gulasch</p>
+                </div>
+                <div class="rezeptImgDiv"><a href="rezept4.html"><img class="rezeptwahl-img" src="img/penne.jpg" style=  "margin-right: 0px" alt=""></a>
+                    <p style="margin-left: 80px;">Penne</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wokMargin">
+        <h2 class="headerWok">Pfanne vs. Wok - Was ist besser?</h2>
+        <div class="wokContent">
+            <p id="wokText">
+                Hierbei ist es tatsächlich von der Art der Zubereitung abhängig. Der Wok
+                ist nicht nur höher, sondern hat in der Mitte den heißesten Punkt und die
+                äußeren Flächen haben währned des Bratens eine niedrigere Temperatur. Mit
+                einer normalen Pfanne lässt sich dafür die Temperatur beim Braten gleichmäßiger
+                verteilen.
+            </p>
+            <div class="wokImg">
+                <img id="wokImg" src="img/wok.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<footer class="footer">
+    <a href="index.html"> <img src="img/logo-white.png" id="logoFooter"></a>
+    <div class="footer-link">
+        <a class="footerLink" href="imprint.html" id="impressum">Impressum</a>
+        <a class="footerLink" href="data.html" id="privacy">Datenschutz</a>
+        <a class="footerLink" href="contact.html" id="contact">Kontakt</a>
+    </div>
+
+    <div class="footer-media">
+        <div class="h3-footer hide-mobile">
+            <h3>Follow us</h3>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.facebook.com"><img id="fbImg" src="img/facebook.png"></a>
+            <a href="https://www.instagram.com"><img id="instaImg" src="img/instagram.png"></a>
+            <a href="https://www.youtube.com"><img id="youTubeImg" src="img/youtube.png"></a>
+        </div>
+    </div>
+</footer>
+
+</html>

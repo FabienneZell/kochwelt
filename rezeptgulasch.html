@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kochwelt</title>
+
+    <link rel="icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="rezept_style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="header_style.css">
+    <link rel="stylesheet" href="footer_styleNew.css">
+
+    <script src="script_calculation.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        let amouth = [125, 1, 0.5, 12.5, 0.0625, 0.0625, 0.125, 0.25, 0.125, -1, 0.125, 0.125, 0.5, 50, 0.25, 1.25];
+
+        let ingredient = [' g Rindfleisch', ' Zwiebel(n)', ' Knoblauchzehe(n)', ' g	Schweineschmalz',
+            ' EL	Mehl', ' Liter	Rotwein', ' Liter Fleischbrühe',
+            ' TL	Paprikapulver, edelsüße', ' TL Paprikapulver, rosenscharf',
+            ' etwas	Salz und Pfeffer', ' TL	Majoran', ' TL Kümmelpulver', ' Paprikaschote(n), grün', ' g Kartoffel(n)', ' Karotte(n)', ' Tomate(n)'];
+    </script>
+</head>
+
+
+<body onload="calculation()">
+
+    <header id="headder" class="header">
+        <a href="index.html"><img class="header-logo" src="img/logo.png"></a>
+        <nav id="navbar" class="nav-bar">
+            <a href="index.html">Start</a>
+            <a href="rezept.html">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="imprint.html">Impressum</a>
+        </nav>
+    </header>
+
+    <img onclick="menuscrollingUp()" class="menubutton" id="scrollup" src="img/menuicon.png" alt="">
+    <img onclick="menuscrollingDown()" class="menubutton" id="scrolldown" src="img/menuicon.png" alt="">
+
+    <div id="menuHidden" class="menuhidden nav-bar">
+        <a href="index.html">Start</a>
+        <a href="rezept.html">Rezept des Tages</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="imprint.html">Impressum</a>
+    </div>
+
+
+    <div class="recipe-margin">
+        <div class="head">
+            <h1>Gulash</h1>
+            <img src="img/goulash.jpg">
+        </div>
+
+        <div class="icons flex-row">
+            <div class="bg-gray iconbox">
+                <img src="img/icons/clock-regular.svg">
+                2 h
+            </div>
+
+            <div class="bg-gray iconbox">
+                <img src="img/icons/brain-solid.svg">
+                simple
+            </div>
+
+            <div class="bg-gray iconbox">
+                <img src="img/icons/calendar-alt-regular.svg">
+                5.05.2022
+            </div>
+
+            <div class="bg-gray iconbox">
+                <a href="downloads/Gulasch.pdf" style=" text-decoration: none; color: black;" download><img
+                        src="img/download.png" style="width: 15px; height:15px;">Herunterladen</a>
+
+            </div>
+        </div>
+
+
+        <div class="calculation flex-row">
+            <p>Zutaten für</p>
+            <form>
+                <input id="input" type="number" class="quantity-number" value="4" min="1"
+                    oninput="validity.valid||(value='');" placeholder="Anzahl der Portionen">
+            </form>
+            <button onclick="calculation()" class="button">
+                Portionen
+            </button>
+        </div>
+
+
+        <table id="table"></table>
+
+
+        <div class="preparation">
+            <h2>Zubereitung</h2>
+            <div class="icons flex-row">
+                <div class="bg-gray iconbox">
+                    <img src="img/icons/clock-regular.svg">
+                    Zubereitung ca. 30 Minunten
+                </div>
+
+                <div class="bg-gray iconbox">
+                    <img src="img/icons/clock-regular.svg">
+                    Gesamtzeit ca. 2 h
+                </div>
+            </div>
+
+            <p>Das Fleisch in kleine Stücke schneiden, Zwiebeln würfeln und den Knoblauch pressen.
+
+                Schweineschmalz in einem Topf erhitzen und das Fleisch darin gut 10 Min. anbraten. Zwiebel und Knoblauch
+                dazugeben und weiterbraten. Mehl darüber stäuben und alles ziehen lassen. Mit Rotwein und Brühe
+                ablöschen, dann Paprikapulver und die Gewürze dazugeben. Das Ganze zugedeckt 40 - 50 Min. köcheln
+                lassen.
+
+                Paprikaschoten, Kartoffeln und Wurzel putzen und in kleine Würfel schneiden. Die Tomaten überbrühen und
+                abziehen, dann entkernen und hacken. Alles zu der Suppe geben und weitere 20 Min. köcheln lassen.
+                Nochmals abschmecken und evtl. mit saurer Sahne servieren.
+
+                Warmes Baguettebrot dazu reichen, schmeckt oberlecker.
+            </p>
+        </div>
+
+
+        <h3>Rezept erstellt von</h3>
+
+
+        <div class="profile flex-row">
+            <img src="img/profileNorbert.png">
+            <p>Norbert</p>
+        </div>
+    </div>
+</body>
+
+
+<footer class="footer">
+    <a href="index.html"> <img src="img/logo-white.png" id="logoFooter"></a>
+    <div class="footer-link">
+        <a class="footerLink" href="imprint.html" id="impressum">Impressum</a>
+        <a class="footerLink" href="data.html" id="privacy">Datenschutz</a>
+        <a class="footerLink" href="contact.html" id="contact">Kontakt</a>
+    </div>
+
+    <div class="footer-media">
+        <div class="h3-footer hide-mobile">
+            <h3>Follow us</h3>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.facebook.com"><img id="fbImg" src="img/facebook.png"></a>
+            <a href="https://www.instagram.com"><img id="instaImg" src="img/instagram.png"></a>
+            <a href="https://www.youtube.com"><img id="youTubeImg" src="img/youtube.png"></a>
+        </div>
+    </div>
+</footer>
+
+</html>

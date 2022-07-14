@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="fonts.css">
+
+    <link rel="stylesheet" href="header_style.css">
+    <link rel="stylesheet" href="contact_style.css">
+    <link rel="stylesheet" href="footer_styleNew.css">
+
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png">
+
+    <title>Kontaktformular</title>
+
+    <script src="script.js"></script>
+</head>
+
+
+
+<body>
+    <header id="headder" class="header">
+        <a href="index.html"><img class="header-logo" src="img/logo.png"></a>
+        <nav id="navbar" class="nav-bar">
+            <a href="index.html">Start</a>
+            <a href="rezept.html">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="imprint.html">Impressum</a>
+        </nav>
+    </header>
+
+    <img onclick="menuscrollingUp()" class="menubutton" id="scrollup" src="img/menuicon.png" alt="">
+    <img onclick="menuscrollingDown()" class="menubutton" id="scrolldown" src="img/menuicon.png" alt="">
+
+    <div id="menuHidden" class="menuhidden nav-bar">
+        <a href="index.html">Start</a>
+        <a href="rezept.html">Rezept des Tages</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="imprint.html">Impressum</a>
+    </div>
+
+
+    <div class="page-layout">
+        <div class="form">
+            <form name="Contact" class="formContact"
+                action="https://gruppe-229.developerakademie.net/Kochwelt/send_mail.php"
+                onsubmit="return validateForm()" method="POST" required>
+
+                <input id="name" name="name" placeholder="Dein Name" type="text">
+                <input id="mail" name="mail" placeholder="Deine E-Mail" type="email">
+
+                <textarea name="text" id="message" placeholder="Deine Nachricht an uns" type="text"></textarea>
+
+                <button type="submit" class="sendButton">Nachricht senden</button>
+            </form>
+
+            <div class="formAdress">
+                <div class="location">
+                    <img src="img/location.png" id="location">
+                    <p>Phantasiestraße 5 - 12345 Traumstadt</p>
+                </div>
+
+                <div class="mail-contact">
+                    <img src="img/mail.png" id="mailImg">
+                    <a href="mailto:info@kochwelt.de">
+                        <p>info@kochwelt.de</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="footer">
+    <a href="index.html"> <img src="img/logo-white.png" id="logoFooter"></a>
+    <div class="footer-link">
+        <a class="footerLink" href="imprint.html" id="impressum">Impressum</a>
+        <a class="footerLink" href="data.html" id="privacy">Datenschutz</a>
+        <a class="footerLink" href="contact.html" id="contact">Kontakt</a>
+    </div>
+
+    <div class="footer-media">
+        <div class="h3-footer hide-mobile">
+            <h3>Follow us</h3>
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com"><img id="fbImg" src="img/facebook.png"></a>
+            <a href="https://www.instagram.com"><img id="instaImg" src="img/instagram.png"></a>
+            <a href="https://www.youtube.com"><img id="youTubeImg" src="img/youtube.png"></a>
+        </div>
+    </div>
+</footer>
+
+</html>
